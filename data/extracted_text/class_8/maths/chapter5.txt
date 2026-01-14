@@ -1,0 +1,1306 @@
+5.1 Is This a Multiple Of?
+Sum of Consecutive Numbers
+Anshu is exploring sums of consecutive numbers. He has written the 
+following —
+Now, he is wondering —
+•	 “Can I write every natural number as a sum of consecutive 
+numbers?” 
+•	 “Which numbers can I write as the sum of consecutive numbers in 
+more than one way?”
+•	 “Ohh, I know all odd numbers can be written as a sum of two 
+consecutive numbers. Can we write all even numbers as a sum of 
+consecutive numbers?”
+•	 “Can I write 0 as a sum of consecutive numbers? Maybe I should 
+use negative numbers.”
+Explore these questions and any others that may occur to you. 
+Discuss them with the class.
+Take any 4 consecutive numbers. For example, 3, 4, 5, and 6. Place ‘+’ and 
+‘–’ signs in between the numbers. How many different possibilities exist? 
+Write all of them.
+7   = 3 + 4
+10 = 1 + 2 + 3 + 4
+12 = 3 + 4 + 5
+15 = 7 + 8
+     = 4 + 5 + 6
+     = 1 + 2 + 3 + 4 + 5
+Math 
+Talk
+3 + 4 – 5 + 6 
+3 – 4 – 5 – 6  
+NUMBER PLAY
+Number Play
+Eight such expressions are possible. You can use the diagram below to 
+systematically list all the possibilities.
+Evaluate each expression and write the result next to it. Do you notice 
+anything interesting?
+Now, take four other consecutive numbers. Place the ‘+’ and ‘–’ signs 
+as you have done before. Find out the results of each expression. 
+What do you observe?
+Repeat this for one more set of 4 consecutive numbers. Share your 
+findings.
+Some sums appear always no matter which 4 consecutive 
+numbers are chosen. Isn’t that interesting?
+Do these patterns occur no matter which 4 consecutive numbers are 
+chosen? Is there a way to find out through reasoning?
+Hint: Use algebra and describe the 8 expressions in a general form.
+You might have noticed that the results of all expressions are even 
+numbers. Even numbers have a factor of 2. Negative numbers having 
+a factor 2 are also even numbers, for example, – 2, – 4, – 6, and so on. 
+Check if anyone in your class got an odd number.
+When 4 consecutive numbers are chosen, no matter how the ‘+’ and 
+‘–’ signs are placed between them, the resulting expressions always have 
+even parity.
+4
+5
+5
+6
+6
+6
+6
++
+–
+–
++
++
+–
+–
+–
+–
+–
++
++
++
++
+3 + 4 + 5 + 6
+3 + 4 + 5 – 6
+Math 
+Talk
+3 + 4 – 5 + 6 = 8
+3 – 4 – 5 – 6  = – 12
+.
+.
+.
+5 + 6 – 7 + 8 = 12
+5 – 6 – 7 – 8  = – 16
+.
+.
+.
+__ + __ – __ + __  = __
+__ – __ – __ – __  =  __
+.
+.
+.
+Ganita Prakash | Grade 8 
+Now take any 4 numbers, place ‘+’ and ‘–’ signs in the eight different 
+ways, and evaluate the resulting expression. What do you observe about 
+their parities?
+Repeat this with other sets of 4 numbers.
+Is there a way to explain why this happens?
+Hint: Think of the rules for parity of the sum or difference of two 
+numbers.
+Explanation 1: Let us consider any of the 8 expressions formed by four 
+numbers a, b, c, and d. When one of its signs is switched, its value always 
+increases or decreases by an even number! Let us see why.
+Consider one of the expressions: a + b – c – d. 
+Replacing +b by – b, we get
+a – b – c – d.
+By how much has the number changed? It has changed by
+(a + b – c – d) –  (a – b – c – d)
+= a + b – c – d – a + b + c + d (notice how the signs changed when we 
+opened the second set of brackets)
+= 2b (this is an even number).
+If the difference between two numbers is even, can they have different 
+parities? No! So either both are even or both are odd.
+Now, let us see what happens when a negative sign is switched to a 
+positive sign.
+Replace any negative sign in the expression a + b – c – d with a positive 
+sign and find the difference between the two numbers.
+What do you conclude from this observation?
+Starting from any expression, we can get 7 expressions by switching one 
+or more ‘+’ and ‘–’ signs. Thus, all the expressions have the same parity!
+Explanation 2: We know that
+odd ± odd = even
+even ± even = even
+odd ± even = odd.
+We have seen that the parity of a + b and a – b is the same, regardless 
+of the parities of a and b.
+In short, a ± b have the same parity. By the same argument, a ± b + c 
+and a ± b – c have the same parity. Extending this further, we can say that 
+all the expressions a ± b ± c ± d have the same parity.
+Math 
+Talk
+Number Play
+Explanation 3: This can also be explained 
+using the positive and negative token 
+model you studied in the chapter on 
+Integers. Try to think how.
+The number of ways to choose 4 
+numbers a, b, c, d and combine them using 
+‘+’ and ‘–’ signs is infinite. Mathematical 
+reasoning allows us to prove that all the 
+combinations a ± b ± c ± d always have the 
+same parity, without having to go through 
+them one by one.
+Is the phenomenon of all the expressions having the same parity limited 
+to taking 4 numbers? What do you think?
+Breaking Even
+We know how to identify even numbers. Without computing them, find 
+out which of the following arithmetic expressions are even.
+Using our understanding of how parity behaves under different 
+operations, identify which of the following algebraic expressions give 
+an even number for any integer values for the letter-numbers.
+3g + 5h
+2a + 2b
+2u – 4v
+4m + 2n
+6m – 3n
+13k – 5k
+b
+2 + 1
+4k × 3j
+x
+2 + 2
+Several problems in mathematics can be thought about and 
+solved in different ways. While the method you came up with 
+may be dear to you, it can be amusing and enriching to know 
+how others thought about it. Two tidbits: ‘share’ and ‘listen’.
+‘What if …?’, ‘Will it always happen?’— Wondering and posing 
+questions and conjectures is as much a part of mathematics as 
+problem solving.
+672 – 348
+43 + 37
+708 – 477
+4 × 347 × 3
+119 × 303
+809 + 214
+3
+543 – 479
+a
+b
+b
+c
+c
+c
+c
+d
+d
+d
+d
+d
+d
+d
+d
++
+–
+–
++
++
+–
+–
+–
+–
+–
++
++
++
++
+Ganita Prakash | Grade 8 
+The expression 4m + 2q will always evaluate to an even number for 
+any integer values of m and q. We can justify this in two different ways —
+•	 We know 4m is even and 2q is even for any integers m and q. 
+Therefore, their sum will also be even.
+•	 The expression 4m + 2q is equal to the expression 2(2m + q). Here, 
+the expression 2(2m + q) means 2 times 2m + q. In other words, 2 is 
+a factor of this expression. Therefore, this expression will always 
+give an even number for any integers m and q.
+For example, if m = 4 and q = – 9, the expression 4m + 2q becomes 
+4 × 4 + 2 × (–9) = – 2, which is an even number.
+In the expression x
+2 + 2, x
+2 is even if x is even, and x
+2 is odd if x is odd. 
+Therefore, the expression x
+2 + 2 will not always give an even number. 
+An example and a non-example for when the expression evaluates to an 
+even number — (i) if x = 6, then x
+2 + 2 = 38, and (ii) if x = 3, then x
+2 + 2
+  = 11.
+Similarly, determine and explain which of the other expressions always 
+give even numbers. Write a couple of examples and non-examples, as 
+appropriate, for each expression.
+Write a few algebraic expressions which always give an even number.
+Pairs to Make Fours
+Take a pair of even numbers. Add them. Is the sum divisible by 4? 
+Try this with different pairs of even numbers.
+When is the sum a multiple of 4, and when is it not? 
+Is there a general rule or a pattern?
+Even numbers can be of two types based on the remainders they leave 
+when divided by 4.
+.
+.
+.
+.
+.
+.
+.
+Even numbers that are multiples 
+of 4 leave a remainder of 0 when 
+divided by 4.
+Even 
+numbers 
+that 
+are 
+not 
+multiples of 4 leave a remainder 2 
+when divided by 4.
+Number Play
+When will two even numbers add up to give a multiple of 4?
+This problem is similar to the question of identifying when adding 
+two numbers will result in an even number. Can you see this?
+There are three cases to examine:
+What happens when we add a multiple of 4 to an even number that is 
+not a multiple of 4? Is it similar to the case of the parity of the sum of an 
+even and an odd number?
+Look at the following expressions and the visualisation. Write the 
+corresponding explanation and examples.
+Explanation with Algebra and Visualisation
+Examples
+Adding 
+two (even) 
+numbers that 
+are multiples 
+of 4 will always 
+give a multiple 
+of 4.
+4p and 4q.
+4p + 4q
+= 4 (p + q).
+p rows
+.
+.
+.
+.
+q rows
+.
+.
+.
+.
++
+=
+.
+.
+.
+.
+.
+.
+.
+.
+(p+q) rows
+4, 12, 16, 24, 
+36.
+12 + 16 
+= 4 (3 + 4) 
+= 28.
+16 + 28 
+= 4 (4 + 7)  
+= 44.
+Adding two 
+even numbers 
+that are not 
+multiples 
+of 4 will 
+always give a 
+multiple of 4 
+because their 
+remainders of 
+2 add up to 4.
+(4p + 2) and (4q + 2).
+(4p + 2) + (4q + 2) 
+= 4p + 4q + 4
+= 4 (p + q + 1).
+p rows
+q rows
++
+=
+(p + q + 1) rows
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+p rows
+1 row
+q rows
+2, 6, 10, 18, 
+22, 42.
+2 + 6 = 8.
+6 + 10 = 16.
+22 + 6 = 28.
+Ganita Prakash | Grade 8 
+Notice how we are able to generalise and prove properties of 
+arithmetic using algebra and also using visualisation.
+Always, Sometimes, or Never
+We examine different statements about factors and multiples and 
+determine whether a statement is ‘Always True’, ‘Sometimes True’, or 
+‘Never True’.
+We know that the sum of any two multiples of 2 is also a multiple of 2.
+1.	 If 8 exactly divides two numbers separately, it must exactly divide 
+their sum.
+Statement 1 is always true. Determine if it is true with subtraction.
+Explanation with Algebra and Visualisation
+Examples
+4p and (4q + 2)
+= 4p + (4q + 2)
+= 4p + 4q + 2
+= 4 (p + q) + 2.
+p rows
+q rows
++
+=
+(p + q) rows with 
+a remainder 2
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+Explanation with Algebra and Visualisation
+Examples
+The two numbers 
+have 8 as a factor; 
+in other words, the 
+two numbers are 
+multiples of 8.
+8a and 8b.
+8 and 16.
+16 and 56.
+80 and 120. 
+As multiples of 8 
+are obtained by 
+repeatedly adding 
+8, the sum of two 
+multiples of 8 will 
+also be a multiple 
+of 8.
+8a + 8b
+= 8 (a + b).
+a rows
+b rows
+.
+.
+.
+.
+.
+.
+.
+.
+(a+b) rows
+8 + 16 = 8(1 + 2) 
+= 24.
+16 + 56 = 72.
+80 + 120 = 200.
+Number Play
+In general, if a divides M and a divides N, then a divides M + N and 
+a divides M – N. In other words, if M and N are multiples of a, then 
+M + N and M – N will also be multiples of a.
+2.	 If a number is divisible by 8, then 8 also divides any two numbers 
+(separately) that add up to the number.
+So, statement 2 is sometimes true.
+3.	 If a number is divisible by 7, then all multiples of that number will 
+be divisible by 7.
+The number 7jm or (7 × j × m) has a factor of 7. We can see that 
+Statement 3 is always true.
+Explanation with Algebra and Visualisation
+Examples
+A number 
+divisible by 8 is 
+a multiple of 8.
+8m
+8, 16, 56, 72.
+A number 
+divisible 
+by 8 can be 
+expressed as 
+a sum of two 
+multiples of 8 or 
+sum of two non-
+multiples of 8.
+8m = 8a + 8b
+8m = p + q
+(p, q not 
+multiples of 
+8)
+a rows
+b rows
+.
+.
+.
+.
+.
+.
+.
+.
+m = (a+b) rows
+.
+.
+p
+.
+.
+.
+.
+. q
+=
+72 = 48 + 24
+(8×9 
+= 8×6 + 8×3).
+72 = 50 + 22
+Explanation with Algebra and Visualisation
+Examples
+Numbers divisible by 7 
+will have 7 as a factor.
+7j
+14 = 7 × 2 (j = 2).
+42 = 7 × 6 (j = 6).
+98 = 7 × 14 (j = 14).
+This contains a total of 
+mj rows. So this is also a 
+multiple of 7.
+(7j) × m
+.
+.
+.
+.
+.
+j rows
+.
+.
+.
+.
+.
+j rows
+.
+.
+.
+.
+.
+j rows
+.
+.
+.
+.
+m times
+Some multiples of 
+14:
+28 = (7 × 2) × 2.
+70 = (7 × 2) × 5.
+154 = (7 × 2) × 11
+Ganita Prakash | Grade 8 
+In general, if A is divisible by k, then all multiples of A are divisible by k.
+4.	 If a number is divisible by 12, then the number is also divisible by all 
+the factors of 12.
+In general, if A is divisible by k, then A is divisible by all the factors 
+of k. Hence, Statement 4 is always true.
+5.	 If a number is divisible by 7, then it is also divisible by any multiple 
+of 7.
+We can see that this statement is only sometimes true.
+Explanation with Algebra and Visualisation
+Examples
+A number divisible by 
+12 is a multiple of 12.
+12m
+12, 24, 36, 48, 
+108, 132. 
+Factors of multiples of 
+12 will include factors 
+of 12.
+12m 
+= 2 × 6 × m
+= 3 × 4 × m
+.
+.
+.
+.
+.
+m rows
+.   .   .   .
+.   .   .   .
+A factor of 12 covers a row fully. 
+Hence, it covers all multiples of 12 
+fully.
+Factors of 24: 1, 
+2, 3, 4, 6, 8, 12, 
+24.
+Explanation with Algebra and Visualisation
+Examples
+Numbers divisible by 
+7 are multiples of 7.
+7k
+.
+.
+.
+.
+.
+k rows
+Multiples of 7.
+7k will be divisible by 
+7m if and only if m is a 
+factor of k.
+7m
+If k = ym
+then 
+7k ÷ 7m = 
+7ym ÷ 7m
+   = y 
+.
+.
+.
+.
+.
+m rows
+.
+.
+.
+.
+.
+m rows
+.
+.
+.
+.
+.
+m rows
+.
+.
+.
+.
+k rows
+42 (7 × 6) is divisible 
+by 7 but it is not 
+divisible by 28 (7 × 4).
+42 (7 × 6) is divisible 
+by 7 and it is divisible 
+by 14 (7 × 2).
+Number Play
+Examine each of the following statements, and determine whether 
+it is ‛Always true’, ‛Sometimes true’, ‛Never true’.
+6.	 If a number is divisible by both 9 and 4, it must be divisible by 36.
+7.	 If a number is divisible by both 6 and 4, it must be divisible by 24.
+In general, if A is divisible by k and A is also divisible by m, then 
+A is divisible by the LCM of k and m. This is because A is a multiple of 
+k and also a multiple of m, so A’s prime factorisation should contain the 
+prime factorisation of LCM (k, m).
+8.	 When you add an odd number to an even number we get a multiple 
+of 6.
+We know that multiples of 6 are all even 
+numbers. The sum of an odd number and an 
+even number will be an odd number. Therefore, 
+this statement is never true. We can also explain 
+this algebraically. Suppose,
+(2n) + (2m + 1) = 6j,
+where 2n is an even number, 2m + 1 is an odd 
+number, and 6j is a multiple of 6. Then
+2n + 2m = 6j – 1
+2 (n + m) = 6j – 1
+which means 2(n + m), which is an even number, should be equal to 
+6j – 1, which is an odd number. This is never true.
+What Remains?
+Find a number that has a remainder of 3 when divided by 5. Write more 
+such numbers. 
+Which algebraic expression(s) capture all such numbers?
+(i) 3k + 5    (ii) 3k – 5    (iii) 3k
+5     (iv) 5k + 3    (v) 5k – 2    (vi) 5k – 3
+The numbers that leave a remainder of 0 when divided by 5 are the 
+multiples of 5. But we want numbers that leave a remainder of 3 when 
+divided by 5. These numbers are 3 more than multiples of 5. Multiples of 
+5 are of the form 5k. So, numbers that leave a remainder of 3 when 
+divided by 5 are those of the form 5k + 3
+Math 
+Talk
+Can I write an even and 
+an odd number as 2n and 
+2n+1 instead?
+.
+.
+.
+k rows
+k =  0   1    2     3     4
+5k + 3 =  3   8   13   18   23
+Ganita Prakash | Grade 8 
+Let us consider another expression, 5k – 2, and see the values it takes for 
+different values of k.
+Numbers that leave a remainder of 3 when 
+divided by 5 can also be seen as 2 less than 
+multiples of 5; 5k – 2, where k ≥ 1.
+Are there other expressions that generate 
+numbers that are 3 more than a multiple of 5?
+Figure it Out
+1.	 The sum of four consecutive numbers is 34. What are these numbers?
+2.	 Suppose p is the greatest of five consecutive numbers. Describe the 
+other four numbers in terms of p. 
+3.	 For each statement below, determine whether it is always true, 
+sometimes true, or never true. Explain your answer. Mention 
+examples and non-examples as appropriate. Justify your claim using 
+algebra.
+(i)	
+The sum of two even numbers is a multiple of 3.
+(ii)	 If a number is not divisible by 18, then it is also not divisible 
+by 9.
+(iii)	 If two numbers are not divisible by 6, then their sum is not 
+divisible by 6.
+(iv)	 The sum of a multiple of 6 and a multiple of 9 is a multiple of 3.
+(v)	 The sum of a multiple of 6 and a multiple of 3 is a multiple of 9.
+4.	 Find a few numbers that leave a remainder of 2 when divided by 3 
+and a remainder of 2 when divided by 4. Write an algebraic 
+expression to describe all such numbers.
+5.	 “I hold some pebbles, not too many, 
+When I group them in 3’s, one stays with me.
+Try pairing them up — it simply won’t do, 
+A stubborn odd pebble remains in my view.
+Group them by 5, yet one’s still around, 
+But grouping by seven, perfection is found. 
+More than one hundred would be far too bold,
+Can you tell me the number of pebbles I hold?”
+6.	 Tathagat has written several numbers that leave a remainder of 2 
+when divided by 6. He claims, “If you add any three such numbers, 
+the sum will always be a multiple of 6.” Is Tathagat’s claim true?
+k =  1   2    3     4     5
+5k – 2 =  3   8   13   18   23
+Number Play
+7.	 When divided by 7, the number 661 leaves a remainder of 3, and 
+4779 leaves a remainder of 5. Without calculating, can you say what 
+remainders the following expressions will leave when divided by 7? 
+Show the solution both algebraically and visually.
+(i)  4779 + 661	
+(ii)  4779 – 661
+8.	 Find a number that leaves a remainder of 2 when divided by 3, 
+a remainder of 3 when divided by 4, and a remainder of 4 when 
+divided by 5. What is the smallest such number? Can you give a 
+simple explanation of why it is the smallest? 
+5.2 Checking Divisibility Quickly
+Earlier, you have learnt shortcuts to check whether a given number, 
+written in the Indian number system is divisible by 2, 4, 5, 8, and 10. Let 
+us revisit them.
+Divisibility by 10, 5, and 2: If the units digit of a number is ‘0’, then 
+it is divisible by 10. Let us understand why this works through algebra.
+We can write the general form of a number in the Indian system 
+using a set of letter-numbers. For example, a 5-digit number can be 
+expressed as, edcba denoting e × 10000 + d × 1000 + c × 100 + b × 10 + a. The 
+letter-numbers e, d, c, b, and a denote each digit of a 5-digit number.
+Any number can be written in general as … dcba, where the letter-
+numbers a, b, c and d represent the units, tens, hundreds and thousands 
+digit, respectively, and so on. As a sum of place values, this number is —
+… +1000d + 100c + 10b + a.
+(For example, in the number 4075, d = 4, c = 0, b = 7, and a = 5.)
+We know that each place value, with the exception of the units place, 
+is a multiple of 10. So, 10b, 100c, … all will be multiples of 10. Hence, the 
+number will be divisible by 10 if and only if the units digit a is 0.
+Similarly, explain using algebra why the divisibility shortcuts for 5, 2, 4, 
+and 8 work.
+Let us now examine shortcuts to check divisibility by some other 
+numbers and explain why they work!
+A Shortcut for Divisibility by 9
+Can you say, without actually calculating, which of these numbers are 
+divisible by 9: 999, 909, 900, 90, 990?
+All of them.
+Ganita Prakash | Grade 8 
+Can we say that any number made up of only the digits ‘0’ and ‘9’, in any 
+order, will always be divisible by 9?
+Yes, if each digit is either 0 or 9, then each term in its expanded form 
+will be 9 ×  or 0 ×  (the ‘   ’ denotes a place value). This means each 
+term will be a multiple of 9, for example, 
+99009 = 9 × 10000 + 9 × 1000 + 0 × 100 + 0 × 10 + 9 × 1.
+But this shortcut alone cannot identify all the multiples 
+of 9. Unlike the numbers 2, 5, and 10, we cannot identify 
+the multiples of 9 by just looking at the unit’s digit. 99 and 
+109 are two numbers with 9 as the units digit; but 99 is 
+divisible by 9, while 109 is not.
+Is 10 divisible by 9? If not, what is the remainder?
+Check the divisibility of other multiples of 10 (10, 20, 30, ...) by 9.
+You will notice that for any multiple of 10, the remainder is the same 
+as the number of tens.
+Similarly, look at the remainder when the multiples of 100 (100, 200, 
+300, … ) are divided by 9. What do you notice?
+The remainder is the same as the number of hundreds for any multiple 
+of 100.
+Using this observation, find the remainder when 427 is divided by 9.
+We see that 427 has 4 hundreds; thus, its corresponding remainder 
+(upon division by 9) would be 4. 427 has 2 tens, and its corresponding 
+remainder would be 2. We have 7 units also remaining. Adding all the 
+remainders, we get 4 + 2 + 7 = 13. We can make one more group of 9 with 
+13, leaving a remainder of 4. Therefore, 427 ÷ 9 gives a remainder of 4.
+99
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+400
+7
+1
+1
+1
+1
+1
+1
+1
+1
+1
+4
+(Remainder)
+Number Play
+Will this work with bigger numbers? 
+You can see that this is true for any place value:
+1 = 0 + 1
+10 = 9 + 1
+100 = 99 + 1
+1000 = 999 + 1
+10000 = 9999 + 1, and so on. Each digit thus denotes the remainder when 
+the corresponding place value is divided by 9.
+For example, to find the remainder of 7309 when divided by 9, we can 
+just add all the digits — 7 + 3 + 0 + 9 — to get 19. This can be seen as 
+follows:
+   7 × 1000 + 3 × 100 + 0 × 10 + 9 × 1
+= 7 × (999 + 1) + 3 × (99 + 1) + 0 × (9 + 1) + 9 × (0+1)
+= (7 × 999 + 3 × 99 + 0 × 9 + 9 × 0) + (7 × 1 + 3 × 1 + 0 × 1 + 9 × 1)
+= (7 × 999 + 3 × 99 + 0 × 9 + 9 × 0) + (7 + 3 + 0 + 9).
+This means that the number 7309 is 19 more than some multiple of 9. 
+The digits 1 and 9 can further be added to get 1 + 9 = 10. Now, we can say 
+that 7309 is 10 more than a multiple of 9. And repeating this step for the 
+number 10, we get the remainder to be 1 + 0 = 1, meaning 7309 is 1 more 
+than a multiple of 9. Therefore, 7309 ÷ 9 gives a remainder of 1.
+A number is divisible by 9 if and only if the sum of its digits is divisible 
+by 9. Also, we can add the digits of a number repeatedly till a single 
+digit is obtained. This single digit is the remainder when the number is 
+divided by 9.
+Look at each of the following statements. Which are correct and why?
+(i)	
+If a number is divisible by 9, then the sum of its digits is 
+divisible by 9.
+1
+1
+1
+1
+7 × 1000
+3 × 100
+9 × 1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+7 × 999
+3 × 99
+3
+999
+999
+999
+999
+99
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+This is a 
+multiple of 9
+So, we need to just  
+consider this part
+(i.e., 7 + 3 + 9 = 19)
+This is a multiple of 9
+So, we need to just consider this part
+Ganita Prakash | Grade 8 
+(ii)	 If the sum of the digits of a number is divisible by 9, then the 
+number is divisible by 9.
+(iii)	 If a number is not divisible by 9, then the sum of its digits is 
+not divisible by 9.
+(iv)	 If the sum of the digits of a number is not divisible by 9, then 
+the number is not divisible by 9.
+Figure it Out
+1.	 Find, without dividing, whether the following numbers are divisible 
+by 9.
+(i) 123    (ii) 405    (iii) 8888    (iv) 93547    (v) 358095
+2.	 Find the smallest multiple of 9 with no odd digits.
+3.	 Find the multiple of 9 that is closest to the number 6000.
+4.	 How many multiples of 9 are there between the numbers 4300 and 
+4400?
+A Shortcut for Divisibility by 3
+We know that all the multiples of 9 are also multiples of 3. That is, if a 
+number is divisible by 9, it will also be divisible by 3. However, there are 
+other multiples of 3 that are not multiples of 9 for example — 15, 33, 
+and 87.
+The shortcut to find the divisibility by 3 is similar to the method for 9. 
+A number is divisible by 3 if the sum of its digits is divisible by 3. Explore 
+the remainders when powers of 10 are divided by 3. Explain why this 
+method works.
+A Shortcut for Divisibility by 11
+Interestingly, the shortcut for 11 is also based on checking the 
+remainders with place value. Let us see how.
+Learning maths is not just about knowing some shortcuts and 
+following procedures but about understanding ‘why’ something 
+works.
+Number Play
+Units place 
+(1)
+11 × 0 = 0
+1 = 11 × 0 + 1
+1 is one more 
+than a multiple 
+of 11.
+Tens place 
+(10)
+11 × 1 = 11
+10 = 11×1 – 1
+10 is one less 
+than a multiple 
+of 11.
+Hundreds 
+place (100)
+11 × 9 = 99
+100 = 11×9 + 1
+100 is one more 
+than a multiple 
+of 11.
+...
+Thousands 
+place 
+(1000)
+11 × 91 = 1001
+1000 = 11×91 
+– 1
+1000 is one less 
+than a multiple 
+of 11.
+......
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+This alternating pattern of one more than 11 and one less than 11 
+continues for higher place values.
+Since 400 contains 4 hundreds, 400 is 4 more than a multiple of 
+11 (396 + 4). Since 60 contains 6 tens, 60 is 6 less than a multiple of 
+11 (66 – 6). Since 2 contains 2 units, 2 is 2 more than a multiple of 11, 
+i.e., 2 = (0 + 2).
+Using these observations, can you tell whether the number 462 is 
+divisible by 11? 
+What could be a general method or shortcut to check divisibility by 
+11?
+Math 
+Talk
+Math 
+Talk
+Ganita Prakash | Grade 8 
+We saw that the place values alternate as 1 more and 1 less than a 
+multiple of 11. Using this observation,
+Steps
+Purpose
+Example for the Number 320185
+1. Add the digits of place 
+values which are 1 
+more (than a multiple 
+of 11), i.e., place values 
+corresponding to 1, 100, 
+10000, and so on.
+To know 
+how much in 
+excess we are 
+with respect 
+to a multiple 
+of 11 for 
+these place 
+values.
+...
+320185
+......
+11
+......
+2 × 10,000
+1 × 100
+5 × 1
+Total excess, 2 + 1 + 5 = 8.
+2. Add the digits of place 
+values which are 1 
+less (than a multiple of 
+11), i.e., place values 
+corresponding to 10, 
+1000, 100000, and so on.
+To know how 
+short we are 
+with respect 
+to a multiple 
+of 11 for 
+these place 
+values.
+11
+........
+3 × 10,000
+0 × 100
+8 × 10
+........
+11
+........
+11
+11
+11
+11
+Total short, 3 + 0 + 8 = 11.
+3. Compute the difference 
+between these two 
+sums, i.e., (number 
+in excess) – (number 
+short).
+To know the 
+remainder 
+obtained 
+when divided 
+by 11.
+8 – 11 = – 3.
+(3 short of a multiple of 11)
+ 
+The difference between these two sums 8 – 11 = – 3, indicating that the 
+number 3,28,105 is 3 short of or 8 more than a multiple of 11.
+If this difference is 11 or a multiple of 11, what does that say about the 
+remainder obtained when the number is divisible by 11?
+Using this shortcut, find out whether the following numbers are divisible 
+by 11. Further, find the remainder if the number is not divisible by 11.
+(i)  158    (ii)  841    (iii)  481    (iv)  5529    (v)  90904    (vi)  857076
+Number Play
+Look at the following procedure —
+Is this method similar to or different from the method we saw just 
+before?
+Fill in the following table. Find a quick way to do this?
+Number
+Divisible by
+3
+5
+8
+10
+128
+Yes
+No
+No
+No
+No
+Yes
+No
+No
+No
+1586
+6686
+429714
+3060
+More on Divisibility Shortcuts
+Divisibility Shortcuts for Other Numbers
+How can we find out if a number is divisible by 6?
+Will checking its divisibility by its factors 2 and 3 work? Use the shortcuts 
+for 2 and 3 on these numbers and divide each number by 6 to verify — 
+38, 225, 186, 64.
+Steps to follow
+Example for the number 328105
+1.	 Place alternating ‘+’ and 
+‘–’ signs before every digit 
+starting from the unit’s digit.
+–3 + 2 – 8 + 1 – 0 + 5
+2.	 Evaluate the expression. 
+–3 + 2 – 8 + 1 – 0 + 5 = – 3
+3.	 The result denotes the 
+remainder obtained when the 
+number is divided by 11.
+328105 is 3 less than or 8 more 
+than a multiple of 11
+Math 
+Talk
+Ganita Prakash | Grade 8 
+How about checking divisibility by 24? Will checking the divisibility by 
+its factors, 4 and 6, work? Why or why not? 
+Determining divisibility by 24 by checking divisibility by 4 and by 6 
+does not work. For example, the number 12 is divisible by both 4 and 6, 
+but not by 24. 
+To check for the divisibility by 24, we can instead check for the 
+divisibility by 3 and divisibility by 8. 
+Explain using prime factorisation why checking divisibility by 3 and 
+8 works for checking divisibility by 24, but checking divisibility by 4 and 
+6 is not sufficient for checking divisibility by 24.
+There are such shortcuts to check divisibility by every number until 
+100, and for some numbers beyond 100. You may try to understand how 
+these work after learning certain concepts in higher grades.
+Digital Roots
+Take a number. Add its digits repeatedly till you get a single-digit 
+number. This single-digit number is called the digital root of the number. 
+For example, the digital root of the number 489710 will be 
+2 (4 + 8 + 9 + 7 + 1 + 0 = 29, 2 + 9 = 11, 1 + 1 = 2).
+What property do you think this digital root will have? Recall that we 
+did this while finding the divisibility shortcut for 9.
+Between the numbers 600 and 700, which numbers have the digital 
+root: (i) 5, (ii) 7, (iii) 3?
+Write the digital roots of any 12 consecutive numbers. What do you 
+observe?
+We saw that the digital root of multiples of 9 is always 9.
+Now, find the digital roots of some consecutive multiples of (i) 3, (ii) 4, 
+and (iii) 6.
+What are the digital roots of numbers that are 1 more than a multiple of 
+6? What do you notice? 
+Try to explain the patterns noticed.
+I’m made of digits, each tiniest and odd,
+No shared ground with root #1 — how odd!
+My digits count, their sum, my root —
+All point to one bold number’s pursuit —
+The largest odd single-digit I proudly claim.
+What’s my number? What’s my name?
+Math 
+Talk
+Number Play
+Aryabhata II’s (c. 950 CE) work Mahāsiddhānta, mentions the method 
+of computing the digital root of a number by repeatedly adding the digits 
+till a single-digit number is obtained. This method is known to have been 
+used to perform checks on calculations of arithmetic operations. 
+Figure it Out
+1.	 The digital root of an 8-digit number is 5. What will be the digital 
+root of 10 more than that number?
+2.	 Write any number. Generate a sequence of numbers by repeatedly 
+adding 11. What would be the digital roots of this sequence of 
+numbers? Share your observations.
+3.	 What will be the digital root of the number 9a + 36b + 13?
+4.	 Make conjectures by examining if there are any patterns or 
+relations between 
+(i)	
+the parity of a number and its digital root. 
+(ii)	
+the digital root of a number and the remainder obtained 
+when the number is divided by 3 or 9.
+5.3 Digits in Disguise
+Last year, we saw cryptarithms — puzzles where each letter stands for a 
+digit, each digit is represented by at most one letter, and the first digit of 
+a number is never 0.
+Solve the cryptarithms given below.
+(i)  
+ A1
++ 1B
+B0
+    (ii)  
+ AB
+ + 37
+6A
+    (iii)  
+ ON
+  ON
+ + ON
+PO
+    (iv)  
+ QR
+ QR
+ + QR
+PRR
+   
+Let us now try solving some cryptarithms involving multiplication.
+(v) PQ × 8 = RS.
+Guna says, “Oh, this means a 2-digit number 
+multiplied by 8 should give another 2-digit number. 
+I know that 10 × 8 = 80. But the units digits of 10 and 
+80 are the same, which we don’t want. For the same 
+reason PQ cannot be 11 as P and Q correspond to 
+different digits. 12 × 8 = 96 fits all the conditions”. Can 
+PQ be 13? Think.
+It is not possible because 13 × 8 = 104. For all 2-digit 
+numbers greater than 12, the product with 8 is a 3-digit number.
+Math 
+Talk
+Ganita Prakash | Grade 8 
+(vi) Try this now: GH × H = 9K.
+This means a 2-digit number multiplied by a 1-digit number gives 
+another 2-digit number in the 90s. Observe the letters corresponding to 
+the units digits in this cryptarithm. Pick the solution to this question 
+from the options given below:
+11 × 9 = 99, 12 × 8 = 96, 46 × 2 = 92, 24 × 4 = 96, 47 × 2 = 94, 31 × 3 = 93, 
+16 × 6 = 96.
+(vii) Here is one more: BYE × 6 = RAY.
+Anshu says, “Since the product is a 3-digit number, B can’t 
+be 2 or more. If B = 2, i.e., 2 hundreds, the product will be 
+more than 1200. So, B = 1.”
+What can you say about ‘Y’? What digits are possible/not 
+possible?
+“Y cannot be 7 or more because, if Y = 7, then 170 × 6 = 1020; but we 
+want a 3-digit product. Also, Y will be even”, Anshu explains.
+We can solve cryptarithms using patterns, properties, and reasoning 
+related to numbers and operations.
+Solve the following:
+   (i)	 UT × 3 = PUT	
+(ii)	
+AB × 5 = BC	
+(iii)	 L2N × 2 = 2NP	
+(iv)	 XY × 4 = ZX	
+ (v)	
+PP × QQ = PRP	
+ (vi)	 JK × 6 = KKK
+Figure it Out
+	 1.	 If 31z5 is a multiple of 9, where z is a digit, what is the value of z? 
+Explain why there are two answers to this problem.
+	 2.	 “I take a number that leaves a remainder of 8 when divided by 12. I 
+take another number which is 4 short of a multiple of 12. Their sum 
+will always be a multiple of 8”, claims Snehal. Examine his claim 
+and justify your conclusion.
+	 3.	 When is the sum of two multiples of 3, a multiple of 6 and when 
+is it not? Explain the different possible cases, and generalise the 
+pattern.
+	 4.	 Sreelatha says, “I have a number that is divisible by 9. If I reverse 
+its digits, it will still be divisible by 9”.
+  (i)	 Examine if her conjecture is true for any multiple of 9. 
+(ii)	 Are any other digit shuffles possible such that the number 
+formed is still a multiple of 9?
+	 5.	 If 48a23b is a multiple of 18, list all possible pairs of values for a 
+and b.
+Number Play
+	 6.	 If 3p7q8 is divisible by 44, list all possible pairs of values for p 
+and q.
+	 7.	 Find three consecutive numbers such that the first number is a 
+multiple of 2, the second number is a multiple of 3, and the third 
+number is a multiple of 4.
+	
+	 Are there more such numbers? How often do they occur? 
+	 8.	 Write five multiples of 36 between 45,000 and 47,000. 
+Share your approach with the class.
+	 9.	 The middle number in the sequence of 5 consecutive even numbers 
+is 5p. Express the other four numbers in sequence in terms of p.
+	10.	 Write a 6-digit number that it is divisible by 15, such that when the 
+digits are reversed, it is divisible by 6.
+	11.	 Deepak claims, “There are some multiples of 11 which, when 
+doubled, are still multiples of 11. But other multiples of 11 don’t 
+remain multiples of 11 when doubled”. Examine if his conjecture is 
+true; explain your conclusion.
+	12.	 Determine whether the statements below are ‘Always True’, 
+‘Sometimes True’, or ‘Never True’. Explain your reasoning.
+	 (i)	 The product of a multiple of 6 and a multiple of 3 is a multiple 
+of 9.
+	(ii)	 The sum of three consecutive even numbers will be divisible 
+by 6.
+	(iii)	 If abcdef is a multiple of 6, then badcef will be a multiple of 6.
+	(iv)	 8 (7b – 3) – 4 (11b + 1) is a multiple of 12.
+	13.	 Choose any 3 numbers. When is their sum divisible by 3? Explore 
+all possible cases and generalise.
+	14.	 Is the product of two consecutive integers always multiple of 2? 
+Why? What about the product of these consecutive integers? Is it 
+always a multiple of 6? Why or why not? What can you say about 
+the product of 4 consecutive integers? What about the product of 
+five consecutive integers?
+	15.	 Solve the cryptarithms —
+(i) EF × E = GGG	
+(ii) WOW × 5 = MEOW
+	16.	 Which of the following Venn diagrams captures the relationship 
+between the multiples of 4, 8, and 32?
+Try
+This
+Math 
+Talk
+Ganita Prakash | Grade 8 
+(i)
+(iii)
+(ii)
+(iv)
+Multiples 
+of 4
+Multiples 
+of 32
+Multiples 
+of 8
+Multiples 
+of 4
+Multiples 
+of 32
+Multiples 
+of 8
+Multiples 
+of 32
+Multiples 
+of 4
+Multiples 
+of 8
+Multiples 
+of 4
+Multiples 
+of 32
+	
+ We explored and learnt various properties of divisibility—
+•	 If a is divisible by b, then all multiples of a are divisible by b.
+•	 If a is divisible by b, then a is divisible by all the factors of b.
+•	 If a divides m and a divides n, then a divides m + n and m – n.
+•	 If a is divisible by b and is also divisible by c, then a is divisible by 
+the LCM of b and c.
+	
+ We learnt shortcuts to check divisibility by 3, 9 and 11, and why they 
+work.
+	
+ Through all this we were exposed to the power of mathematical 
+thinking and reasoning, using algebra, visualisation, examples and 
+counterexamples.
+SUMMARY
+Multiples 
+of 8
+Navakankari
+Navakankari, also known as Sālu Mane Āṭa, Chār-Pār, or Navkakri, is a 
+traditional Indian board game that is the same as ‛Nine Men’s Morris’ or 
+‛Mills in the West’. It is a strategy game for two players where the goal is 
+to form lines of three pawns to eliminate the opponent’s pawns or block 
+their movement.
+Gameplay
+1.	 Each player starts with 9 pawns. The players take turns in placing 
+their pawns on the marked intersections. An intersection can have 
+at most one pawn.
+2.	 Once all the pawns are placed, the players take turns to move one of 
+their pawns to adjacent empty intersections to form lines of three. 
+The line can be horizontal or vertical. 
+3.	 Once a player makes a line with their pawns they can remove any 
+one of the opponent’s pawns as long as it is not a part of one of their 
+lines.
+A player wins if the opponent has less than 3 pawns or is unable to make 
+a move.

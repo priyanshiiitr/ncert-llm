@@ -1,0 +1,374 @@
+[
+  {
+    "class": "6",
+    "subject": "maths",
+    "chapter": "Chapter1",
+    "chunk_id": 0
+  },
+  {
+    "class": "6",
+    "subject": "maths",
+    "chapter": "Chapter10",
+    "chunk_id": 0
+  },
+  {
+    "class": "6",
+    "subject": "maths",
+    "chapter": "Chapter2",
+    "chunk_id": 0
+  },
+  {
+    "class": "6",
+    "subject": "maths",
+    "chapter": "Chapter3",
+    "chunk_id": 0
+  },
+  {
+    "class": "6",
+    "subject": "maths",
+    "chapter": "Chapter4",
+    "chunk_id": 0
+  },
+  {
+    "class": "6",
+    "subject": "maths",
+    "chapter": "Chapter5",
+    "chunk_id": 0
+  },
+  {
+    "class": "6",
+    "subject": "maths",
+    "chapter": "Chapter6",
+    "chunk_id": 0
+  },
+  {
+    "class": "6",
+    "subject": "maths",
+    "chapter": "Chapter7",
+    "chunk_id": 0
+  },
+  {
+    "class": "6",
+    "subject": "maths",
+    "chapter": "Chapter8",
+    "chunk_id": 0
+  },
+  {
+    "class": "6",
+    "subject": "maths",
+    "chapter": "Chapter9",
+    "chunk_id": 0
+  },
+  {
+    "class": "6",
+    "subject": "science",
+    "chapter": "Chapter1",
+    "chunk_id": 0
+  },
+  {
+    "class": "6",
+    "subject": "science",
+    "chapter": "Chapter10",
+    "chunk_id": 0
+  },
+  {
+    "class": "6",
+    "subject": "science",
+    "chapter": "Chapter11",
+    "chunk_id": 0
+  },
+  {
+    "class": "6",
+    "subject": "science",
+    "chapter": "Chapter12",
+    "chunk_id": 0
+  },
+  {
+    "class": "6",
+    "subject": "science",
+    "chapter": "Chapter2",
+    "chunk_id": 0
+  },
+  {
+    "class": "6",
+    "subject": "science",
+    "chapter": "Chapter3",
+    "chunk_id": 0
+  },
+  {
+    "class": "6",
+    "subject": "science",
+    "chapter": "Chapter4",
+    "chunk_id": 0
+  },
+  {
+    "class": "6",
+    "subject": "science",
+    "chapter": "Chapter5",
+    "chunk_id": 0
+  },
+  {
+    "class": "6",
+    "subject": "science",
+    "chapter": "Chapter6",
+    "chunk_id": 0
+  },
+  {
+    "class": "6",
+    "subject": "science",
+    "chapter": "Chapter7",
+    "chunk_id": 0
+  },
+  {
+    "class": "6",
+    "subject": "science",
+    "chapter": "Chapter8",
+    "chunk_id": 0
+  },
+  {
+    "class": "6",
+    "subject": "science",
+    "chapter": "Chapter9",
+    "chunk_id": 0
+  },
+  {
+    "class": "7",
+    "subject": "maths",
+    "chapter": "Chapter1",
+    "chunk_id": 0
+  },
+  {
+    "class": "7",
+    "subject": "maths",
+    "chapter": "Chapter2",
+    "chunk_id": 0
+  },
+  {
+    "class": "7",
+    "subject": "maths",
+    "chapter": "Chapter3",
+    "chunk_id": 0
+  },
+  {
+    "class": "7",
+    "subject": "maths",
+    "chapter": "Chapter4",
+    "chunk_id": 0
+  },
+  {
+    "class": "7",
+    "subject": "maths",
+    "chapter": "Chapter5",
+    "chunk_id": 0
+  },
+  {
+    "class": "7",
+    "subject": "maths",
+    "chapter": "Chapter6",
+    "chunk_id": 0
+  },
+  {
+    "class": "7",
+    "subject": "maths",
+    "chapter": "Chapter7",
+    "chunk_id": 0
+  },
+  {
+    "class": "7",
+    "subject": "maths",
+    "chapter": "Chapter8",
+    "chunk_id": 0
+  },
+  {
+    "class": "7",
+    "subject": "science",
+    "chapter": "Chapter1",
+    "chunk_id": 0
+  },
+  {
+    "class": "7",
+    "subject": "science",
+    "chapter": "Chapter10",
+    "chunk_id": 0
+  },
+  {
+    "class": "7",
+    "subject": "science",
+    "chapter": "Chapter11",
+    "chunk_id": 0
+  },
+  {
+    "class": "7",
+    "subject": "science",
+    "chapter": "Chapter12",
+    "chunk_id": 0
+  },
+  {
+    "class": "7",
+    "subject": "science",
+    "chapter": "Chapter2",
+    "chunk_id": 0
+  },
+  {
+    "class": "7",
+    "subject": "science",
+    "chapter": "Chapter3",
+    "chunk_id": 0
+  },
+  {
+    "class": "7",
+    "subject": "science",
+    "chapter": "Chapter4",
+    "chunk_id": 0
+  },
+  {
+    "class": "7",
+    "subject": "science",
+    "chapter": "Chapter5",
+    "chunk_id": 0
+  },
+  {
+    "class": "7",
+    "subject": "science",
+    "chapter": "Chapter6",
+    "chunk_id": 0
+  },
+  {
+    "class": "7",
+    "subject": "science",
+    "chapter": "Chapter7",
+    "chunk_id": 0
+  },
+  {
+    "class": "7",
+    "subject": "science",
+    "chapter": "Chapter8",
+    "chunk_id": 0
+  },
+  {
+    "class": "7",
+    "subject": "science",
+    "chapter": "Chapter9",
+    "chunk_id": 0
+  },
+  {
+    "class": "8",
+    "subject": "maths",
+    "chapter": "Chapter1",
+    "chunk_id": 0
+  },
+  {
+    "class": "8",
+    "subject": "maths",
+    "chapter": "Chapter2",
+    "chunk_id": 0
+  },
+  {
+    "class": "8",
+    "subject": "maths",
+    "chapter": "Chapter3",
+    "chunk_id": 0
+  },
+  {
+    "class": "8",
+    "subject": "maths",
+    "chapter": "Chapter4",
+    "chunk_id": 0
+  },
+  {
+    "class": "8",
+    "subject": "maths",
+    "chapter": "Chapter5",
+    "chunk_id": 0
+  },
+  {
+    "class": "8",
+    "subject": "maths",
+    "chapter": "Chapter6",
+    "chunk_id": 0
+  },
+  {
+    "class": "8",
+    "subject": "maths",
+    "chapter": "Chapter7",
+    "chunk_id": 0
+  },
+  {
+    "class": "8",
+    "subject": "science",
+    "chapter": "Chapter1",
+    "chunk_id": 0
+  },
+  {
+    "class": "8",
+    "subject": "science",
+    "chapter": "Chapter10",
+    "chunk_id": 0
+  },
+  {
+    "class": "8",
+    "subject": "science",
+    "chapter": "Chapter11",
+    "chunk_id": 0
+  },
+  {
+    "class": "8",
+    "subject": "science",
+    "chapter": "Chapter12",
+    "chunk_id": 0
+  },
+  {
+    "class": "8",
+    "subject": "science",
+    "chapter": "Chapter13",
+    "chunk_id": 0
+  },
+  {
+    "class": "8",
+    "subject": "science",
+    "chapter": "Chapter2",
+    "chunk_id": 0
+  },
+  {
+    "class": "8",
+    "subject": "science",
+    "chapter": "Chapter3",
+    "chunk_id": 0
+  },
+  {
+    "class": "8",
+    "subject": "science",
+    "chapter": "Chapter4",
+    "chunk_id": 0
+  },
+  {
+    "class": "8",
+    "subject": "science",
+    "chapter": "Chapter5",
+    "chunk_id": 0
+  },
+  {
+    "class": "8",
+    "subject": "science",
+    "chapter": "Chapter6",
+    "chunk_id": 0
+  },
+  {
+    "class": "8",
+    "subject": "science",
+    "chapter": "Chapter7",
+    "chunk_id": 0
+  },
+  {
+    "class": "8",
+    "subject": "science",
+    "chapter": "Chapter8",
+    "chunk_id": 0
+  },
+  {
+    "class": "8",
+    "subject": "science",
+    "chapter": "Chapter9",
+    "chunk_id": 0
+  }
+]
