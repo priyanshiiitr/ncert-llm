@@ -87,11 +87,12 @@ def generate(prompt, tokenizer, model):
             **inputs,
             max_new_tokens=MAX_NEW_TOKENS,
             do_sample=False,
-            temperature=0.2,
             pad_token_id=tokenizer.eos_token_id
         )
 
-    return tokenizer.decode(outputs[0], skip_special_tokens=True)
+    # 🔥 ONLY return newly generated text
+    generated_tokens = outputs[0][inputs["input_ids"].shape[-1]:]
+    return tokenizer.decode(generated_tokens, skip_special_tokens=True)
 
 
 def main():
@@ -120,9 +121,13 @@ def main():
 
             # 4️⃣ Generate Q&A
             output = generate(prompt, tokenizer, model)
+            print("\n--- RAW MODEL OUTPUT ---")
+            print(output)
+            print("------------------------\n")
 
-            if "SKIP" in output:
+            if output.strip().startswith("SKIP"):
                 continue
+
 
             try:
                 question = output.split("Q:")[1].split("A:")[0].strip()
