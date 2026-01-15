@@ -47,16 +47,16 @@ def build_prompt(chunk, meta):
 You are generating training data for an NCERT-based AI tutor.
 
 TASK:
-From the NCERT text below, generate EXACTLY:
-1. One clear definition-type question
-2. One clear explanation-type question
+From the NCERT text below, generate:
+- One definition-style question OR
+- One explanation-style question
 
 RULES:
-- Questions must be answerable ONLY from the given text.
-- Answers must be strictly based on the text.
+- Question MUST be answerable from the given text.
+- Answer MUST strictly use the given text.
 - Use simple NCERT-style language.
-- If the text is not suitable for questions, respond with ONLY:
-  "SKIP"
+- If the text is very short or clearly unsuitable, you MAY respond with "SKIP".
+- Prefer generating at least ONE good question if possible.
 
 METADATA:
 Class: {meta['class']}
@@ -66,11 +66,9 @@ Chapter: {meta['chapter']}
 NCERT TEXT:
 {chunk}
 
-FORMAT:
-Q1: <question>
-A1: <answer>
-Q2: <question>
-A2: <answer>
+FORMAT (VERY IMPORTANT):
+Q: <question>
+A: <answer>
 """.strip()
 
 def generate(text, tokenizer, model):
@@ -109,12 +107,20 @@ def main():
                 continue
 
             try:
-                q1 = output.split("Q1:")[1].split("A1:")[0].strip()
-                a1 = output.split("A1:")[1].split("Q2:")[0].strip()
-                q2 = output.split("Q2:")[1].split("A2:")[0].strip()
-                a2 = output.split("A2:")[1].strip()
+                q = output.split("Q:")[1].split("A:")[0].strip()
+                a = output.split("A:")[1].strip()
             except Exception:
                 continue
+
+            example = {
+                "instruction": f"{q} (According to NCERT Class {record['class']} {record['subject']})",
+                "input": "",
+                "output": a
+            }
+
+            fout.write(json.dumps(example, ensure_ascii=False) + "\n")
+            written += 1
+
 
             examples = [
                 {
