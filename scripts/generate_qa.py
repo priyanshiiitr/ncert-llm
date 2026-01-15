@@ -18,6 +18,12 @@ OUT_FILE = OUT_DIR / "ncert_qa.jsonl"
 LLM_NAME = "microsoft/phi-2"   # Use GPU (Colab)
 MAX_NEW_TOKENS = 200
 # =========================================
+def truncate_prompt(prompt, tokenizer, max_tokens=1800):
+    tokens = tokenizer.encode(prompt, add_special_tokens=False)
+    if len(tokens) <= max_tokens:
+        return prompt
+    tokens = tokens[:max_tokens]
+    return tokenizer.decode(tokens)
 
 
 def load_llm():
@@ -67,19 +73,21 @@ Q2: <question>
 A2: <answer>
 """.strip()
 
-
 def generate(text, tokenizer, model):
     inputs = tokenizer(text, return_tensors="pt")
+
+    # 🔥 Move inputs to same device as model
+    inputs = {k: v.to(model.device) for k, v in inputs.items()}
+
     with torch.no_grad():
         outputs = model.generate(
             **inputs,
-            max_new_tokens=MAX_NEW_TOKENS,
-            temperature=0.2,
+            max_new_tokens=200,
             do_sample=False,
             pad_token_id=tokenizer.eos_token_id
         )
-    return tokenizer.decode(outputs[0], skip_special_tokens=True)
 
+    return tokenizer.decode(outputs[0], skip_special_tokens=True)
 
 def main():
     tokenizer, model = load_llm()
@@ -93,8 +101,9 @@ def main():
         for record in tqdm(chunks, desc="Generating Q&A"):
             safe_chunk = truncate_text(record["text"], tokenizer)
             prompt = build_prompt(safe_chunk, record)
-
+            prompt = truncate_prompt(prompt, tokenizer)   # 🔥 IMPORTANT
             output = generate(prompt, tokenizer, model)
+
 
             if "SKIP" in output:
                 continue
