@@ -32,10 +32,13 @@ def retrieve_context(query,index,metadata,embedder):
     return "\n".join(contexts), indices[0]
 def load_llm():
     tokenizer = AutoTokenizer.from_pretrained(LLM_NAME)
-    model = AutoModelForCausalLM.from_pretrained(LLM_NAME)
-    if torch.cuda.is_available():
-        model = model.to("cuda")
+    model = AutoModelForCausalLM.from_pretrained(
+        LLM_NAME,
+        torch_dtype=torch.float16,
+        device_map="auto"
+    )
     return tokenizer, model
+
 def build_prompt(question, retrieved_context):
     return f"""
 You are an NCERT textbook assistant.
