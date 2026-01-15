@@ -15,10 +15,10 @@ OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 OUT_FILE = OUT_DIR / "ncert_qa.jsonl"
 
-LLM_NAME = "microsoft/phi-2"   # Use GPU in Colab
-MAX_NEW_TOKENS = 200
-MAX_PROMPT_TOKENS = 1800
-MAX_CHUNK_TOKENS = 1200
+LLM_NAME = "mistralai/Mistral-7B-Instruct-v0.2"  # ✅ CHANGED
+MAX_NEW_TOKENS = 300
+MAX_PROMPT_TOKENS = 6000     # Mistral supports long context
+MAX_CHUNK_TOKENS = 4000
 # =========================================
 
 
@@ -42,17 +42,17 @@ def truncate_by_tokens(text, tokenizer, max_tokens):
 
 def build_prompt(chunk, meta):
     return f"""
-You are generating training data for an NCERT-based AI tutor.
+You are an NCERT textbook expert creating training data.
 
 TASK:
-From the NCERT text below, generate ONE good question-answer pair.
+From the NCERT text below, generate ONE high-quality question-answer pair.
 
 RULES:
-- Question MUST be answerable from the given text.
-- Answer MUST strictly use the given text.
-- Use simple NCERT-style language.
+- The question MUST be directly answerable from the given text.
+- The answer MUST strictly use only the given text.
+- Use clear, simple NCERT-style language.
 - If the text is clearly unsuitable, respond with exactly:
-  SKIP
+SKIP
 
 METADATA:
 Class: {meta['class']}
@@ -62,7 +62,7 @@ Chapter: {meta['chapter']}
 NCERT TEXT:
 {chunk}
 
-FORMAT (VERY IMPORTANT):
+FORMAT (MANDATORY):
 Q: <question>
 A: <answer>
 """.strip()
@@ -77,6 +77,7 @@ def generate(prompt, tokenizer, model):
             **inputs,
             max_new_tokens=MAX_NEW_TOKENS,
             do_sample=False,
+            temperature=0.2,
             pad_token_id=tokenizer.eos_token_id
         )
 
@@ -94,7 +95,7 @@ def main():
     with open(OUT_FILE, "w", encoding="utf-8") as fout:
         for record in tqdm(records, desc="Generating Q&A"):
 
-            # 1️⃣ Truncate raw NCERT chunk
+            # 1️⃣ Truncate NCERT chunk
             safe_chunk = truncate_by_tokens(
                 record["text"], tokenizer, MAX_CHUNK_TOKENS
             )
@@ -102,12 +103,12 @@ def main():
             # 2️⃣ Build prompt
             prompt = build_prompt(safe_chunk, record)
 
-            # 3️⃣ Truncate FULL prompt
+            # 3️⃣ Truncate full prompt safely
             prompt = truncate_by_tokens(
                 prompt, tokenizer, MAX_PROMPT_TOKENS
             )
 
-            # 4️⃣ Generate
+            # 4️⃣ Generate Q&A
             output = generate(prompt, tokenizer, model)
 
             if "SKIP" in output:
