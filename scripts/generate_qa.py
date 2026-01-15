@@ -29,6 +29,12 @@ def load_llm():
     )
     return tokenizer, model
 
+def truncate_text(text, tokenizer, max_tokens=1500):
+    tokens = tokenizer.encode(text, add_special_tokens=False)
+    if len(tokens) <= max_tokens:
+        return text
+    tokens = tokens[:max_tokens]
+    return tokenizer.decode(tokens)
 
 def build_prompt(chunk, meta):
     return f"""
@@ -85,7 +91,9 @@ def main():
 
     with open(OUT_FILE, "w", encoding="utf-8") as fout:
         for record in tqdm(chunks, desc="Generating Q&A"):
-            prompt = build_prompt(record["text"], record)
+            safe_chunk = truncate_text(record["text"], tokenizer)
+            prompt = build_prompt(safe_chunk, record)
+
             output = generate(prompt, tokenizer, model)
 
             if "SKIP" in output:
