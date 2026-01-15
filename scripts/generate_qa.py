@@ -15,15 +15,11 @@ OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 OUT_FILE = OUT_DIR / "ncert_qa.jsonl"
 
-LLM_NAME = "microsoft/phi-2"   # Use GPU (Colab)
+LLM_NAME = "microsoft/phi-2"   # Use GPU in Colab
 MAX_NEW_TOKENS = 200
+MAX_PROMPT_TOKENS = 1800
+MAX_CHUNK_TOKENS = 1200
 # =========================================
-def truncate_prompt(prompt, tokenizer, max_tokens=1800):
-    tokens = tokenizer.encode(prompt, add_special_tokens=False)
-    if len(tokens) <= max_tokens:
-        return prompt
-    tokens = tokens[:max_tokens]
-    return tokenizer.decode(tokens)
 
 
 def load_llm():
@@ -35,28 +31,28 @@ def load_llm():
     )
     return tokenizer, model
 
-def truncate_text(text, tokenizer, max_tokens=1500):
+
+def truncate_by_tokens(text, tokenizer, max_tokens):
     tokens = tokenizer.encode(text, add_special_tokens=False)
     if len(tokens) <= max_tokens:
         return text
     tokens = tokens[:max_tokens]
     return tokenizer.decode(tokens)
 
+
 def build_prompt(chunk, meta):
     return f"""
 You are generating training data for an NCERT-based AI tutor.
 
 TASK:
-From the NCERT text below, generate:
-- One definition-style question OR
-- One explanation-style question
+From the NCERT text below, generate ONE good question-answer pair.
 
 RULES:
 - Question MUST be answerable from the given text.
 - Answer MUST strictly use the given text.
 - Use simple NCERT-style language.
-- If the text is very short or clearly unsuitable, you MAY respond with "SKIP".
-- Prefer generating at least ONE good question if possible.
+- If the text is clearly unsuitable, respond with exactly:
+  SKIP
 
 METADATA:
 Class: {meta['class']}
@@ -71,75 +67,68 @@ Q: <question>
 A: <answer>
 """.strip()
 
-def generate(text, tokenizer, model):
-    inputs = tokenizer(text, return_tensors="pt")
 
-    # 🔥 Move inputs to same device as model
+def generate(prompt, tokenizer, model):
+    inputs = tokenizer(prompt, return_tensors="pt")
     inputs = {k: v.to(model.device) for k, v in inputs.items()}
 
     with torch.no_grad():
         outputs = model.generate(
             **inputs,
-            max_new_tokens=200,
+            max_new_tokens=MAX_NEW_TOKENS,
             do_sample=False,
             pad_token_id=tokenizer.eos_token_id
         )
 
     return tokenizer.decode(outputs[0], skip_special_tokens=True)
 
+
 def main():
     tokenizer, model = load_llm()
 
     with open(CHUNKS_FILE, "r", encoding="utf-8") as f:
-        chunks = [json.loads(line) for line in f]
+        records = [json.loads(line) for line in f]
 
     written = 0
 
     with open(OUT_FILE, "w", encoding="utf-8") as fout:
-        for record in tqdm(chunks, desc="Generating Q&A"):
-            safe_chunk = truncate_text(record["text"], tokenizer)
-            prompt = build_prompt(safe_chunk, record)
-            prompt = truncate_prompt(prompt, tokenizer)   # 🔥 IMPORTANT
-            output = generate(prompt, tokenizer, model)
+        for record in tqdm(records, desc="Generating Q&A"):
 
+            # 1️⃣ Truncate raw NCERT chunk
+            safe_chunk = truncate_by_tokens(
+                record["text"], tokenizer, MAX_CHUNK_TOKENS
+            )
+
+            # 2️⃣ Build prompt
+            prompt = build_prompt(safe_chunk, record)
+
+            # 3️⃣ Truncate FULL prompt
+            prompt = truncate_by_tokens(
+                prompt, tokenizer, MAX_PROMPT_TOKENS
+            )
+
+            # 4️⃣ Generate
+            output = generate(prompt, tokenizer, model)
 
             if "SKIP" in output:
                 continue
 
             try:
-                q = output.split("Q:")[1].split("A:")[0].strip()
-                a = output.split("A:")[1].strip()
+                question = output.split("Q:")[1].split("A:")[0].strip()
+                answer = output.split("A:")[1].strip()
             except Exception:
                 continue
 
             example = {
-                "instruction": f"{q} (According to NCERT Class {record['class']} {record['subject']})",
+                "instruction": f"{question} (According to NCERT Class {record['class']} {record['subject']})",
                 "input": "",
-                "output": a
+                "output": answer
             }
 
             fout.write(json.dumps(example, ensure_ascii=False) + "\n")
             written += 1
 
-
-            examples = [
-                {
-                    "instruction": f"{q1} (According to NCERT Class {record['class']} {record['subject']})",
-                    "input": "",
-                    "output": a1
-                },
-                {
-                    "instruction": f"{q2} (According to NCERT Class {record['class']} {record['subject']})",
-                    "input": "",
-                    "output": a2
-                }
-            ]
-
-            for ex in examples:
-                fout.write(json.dumps(ex, ensure_ascii=False) + "\n")
-                written += 1
-
-    print(f"✅ Dataset generation complete")
+    print("✅ Dataset generation complete")
     print(f"📘 Total Q&A pairs created: {written}")
 
 
