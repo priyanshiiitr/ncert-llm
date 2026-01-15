@@ -11,7 +11,7 @@ META_FILE = VECTOR_DIR / "metadata.json"
 EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 # Lightweight, CPU-friendly model
 LLM_NAME = "microsoft/phi-2"
-TOP_K = 4
+TOP_K = 2
 MAX_NEW_TOKENS = 256
 # ==============================
 def load_retriever():
@@ -38,13 +38,15 @@ def load_llm():
     return tokenizer, model
 def build_prompt(question, retrieved_context):
     return f"""
-You are an NCERT-based teaching assistant.
+You are an NCERT textbook assistant.
 
-RULES:
-- Answer STRICTLY from NCERT syllabus.
-- Use simple student-friendly language.
-- If the answer is NOT present in NCERT, say:
-  "This topic is not explicitly covered in the NCERT syllabus."
+STRICT RULES (VERY IMPORTANT):
+- Answer ONLY using the NCERT context provided below.
+- Do NOT use outside knowledge.
+- Do NOT guess or add extra facts.
+- Use simple, student-friendly language.
+- If the answer is NOT clearly present in the NCERT context, say exactly:
+  "This information is not found in the NCERT textbook."
 
 NCERT CONTEXT:
 {retrieved_context}
@@ -54,15 +56,26 @@ QUESTION:
 
 ANSWER:
 """.strip()
+
 def generate_answer(prompt, tokenizer, model):
     inputs = tokenizer(prompt, return_tensors="pt")
+
     with torch.no_grad():
         outputs = model.generate(
             **inputs,
-            max_new_tokens=MAX_NEW_TOKENS,
-            do_sample=False
+            max_new_tokens=120,          # HARD LIMIT
+            temperature=0.2,             # Less creativity
+            do_sample=False,             # Deterministic
+            pad_token_id=tokenizer.eos_token_id
         )
-    return tokenizer.decode(outputs[0], skip_special_tokens=True)
+
+    text = tokenizer.decode(outputs[0], skip_special_tokens=True)
+
+    # Show only the answer
+    if "ANSWER:" in text:
+        return text.split("ANSWER:")[-1].strip()
+    return text.strip()
+
 def main():
     print("📘 NCERT Chatbot (type 'exit' to quit)\n")
 
